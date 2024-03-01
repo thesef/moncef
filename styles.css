@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.parallax {
+    background-image: url('background.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+    transform-style: preserve-3d;
+}
+.parallax-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top;
+}
+.parallax-layer-1 {
+    transform: translateZ(-1px) scale(2);
+}
+.parallax-layer-2 {
+    transform: translateZ(-2px) scale(3);
+}
+.parallax-layer-3 {
+    transform: translateZ(-3px) scale(4);
+}
